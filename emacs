@@ -13,3 +13,7 @@
  )
 (setq-default major-mode 'text-mode)
 (add-hook 'text-mode-hook 'visual-line-mode)
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
