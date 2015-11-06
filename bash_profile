@@ -1,9 +1,4 @@
-function ph {
-	for var in "$@"
-	do
-		grep -i "$var" "/Users/mike/Google Drive/phonelist.txt"
-	done
-}
+alias bat="pmset -g batt"
 alias ll="ls -F -l"
 bind "set completion-ignore-case on"
 # Setting PATH for Python 3.5
