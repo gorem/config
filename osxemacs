@@ -13,7 +13,18 @@
  )
 (setq-default major-mode 'text-mode)
 (add-hook 'text-mode-hook 'visual-line-mode)
-(setq mac-option-key-is-meta nil)
-(setq mac-command-key-is-meta t)
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier nil)
+(cua-mode t)
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
+(setq ring-bell-function 'ignore)
+(setq require-final-newline t)
+(prefer-coding-system 'utf-8)
+(setq
+ backup-by-copying t
+ backup-directory-alist '(("." . "~/Documents/backups"))
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-versions 2)
+(setq auto-save-file-name-transforms
+      `((".*" ,"~/Documents/backups/" t)))
+(setq ns-right-alternate-modifier (quote none))
