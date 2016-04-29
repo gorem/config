@@ -12,7 +12,8 @@
  ;; If there is more than one, they won't work right.
  )
 (setq-default major-mode 'text-mode)
-(add-hook 'text-mode-hook 'visual-line-mode)
+(when (display-graphic-p)
+  (add-hook 'text-mode-hook 'visual-line-mode))
 (cua-mode t)
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
@@ -28,3 +29,4 @@
 (setq auto-save-file-name-transforms
       `((".*" ,"~/Documents/backups/" t)))
 (setq ns-right-alternate-modifier (quote none))
+(setq ns-pop-up-frames nil)
