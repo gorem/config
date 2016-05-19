@@ -22,11 +22,11 @@
 (prefer-coding-system 'utf-8)
 (setq
  backup-by-copying t
- backup-directory-alist '(("." . "~/Documents/backups"))
+ backup-directory-alist '(("." . "~/Documents/.backups"))
  delete-old-versions t
  kept-new-versions 6
  kept-old-versions 2)
 (setq auto-save-file-name-transforms
-      `((".*" ,"~/Documents/backups/" t)))
+      `((".*" ,"~/Documents/.backups/" t)))
 (setq ns-right-alternate-modifier (quote none))
 (setq ns-pop-up-frames nil)
