@@ -1,6 +1,7 @@
 alias ll="ls -F -l"
+alias lh="ls -d .!(|.)"
 alias bat="pmset -g batt"
 alias batt="pmset -g batt"
+alias em="open -a Emacs"
 alias sayg="say -v Anna"
 bind "set completion-ignore-case on"
-function code() { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
