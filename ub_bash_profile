@@ -1,2 +1,2 @@
 alias ll="ls -F -l"
-
+alias lh="ls -d .!(|.)"
