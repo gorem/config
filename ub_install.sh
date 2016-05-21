@@ -18,13 +18,13 @@ do
     esac
 done
 
-sudo apt install git vim emacs24
+sudo apt install git vim emacs24 fonts-linuxlibertine
 
 mkdir Code
 cd Code
 git clone https://github.com/gorem/config.git
 
-cp config/ub_bash_profile ~/.bash_profile
+cat config/ub_bash_profile >> ~/.profile
 cp config/ub_emacs ~/.emacs
 
 cd ~/Downloads
