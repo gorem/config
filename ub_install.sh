@@ -24,7 +24,7 @@ mkdir Code
 cd Code
 git clone https://github.com/gorem/config.git
 
-cat config/ub_bash_profile >> ~/.profile
+cat config/ub_bash_profile >> ~/.bash_aliases
 cp config/ub_emacs ~/.emacs
 
 cd ~/Downloads
