@@ -48,4 +48,4 @@ if [ "$want_spotify" = true ]; then
     exit;
 fi
 
-# wget https://raw.githubusercontent.com/gorem/config/master/ub_install.sh
+# wget https://raw.githubusercontent.com/gorem/config/master/ub-setup.sh
