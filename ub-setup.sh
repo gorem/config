@@ -18,7 +18,7 @@ do
     esac
 done
 
-sudo apt install git vim emacs24 fonts-linuxlibertine
+sudo apt install git vim emacs24 fonts-linuxlibertine exfat-fuse exfat-utils
 
 mkdir Code
 cd Code
