@@ -1,2 +1,6 @@
 alias ll="ls -F -l"
 alias lh="ls -d .!(|.)"
+alias e="emacs"
+alias em="emacs"
+alias et="emacs -nw"
+alias en="emacs -nw"
