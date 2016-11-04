@@ -11,12 +11,12 @@ alias sayg="say -v Anna"
 bind "set completion-ignore-case on"
 PS1="\u \w $ "
 function quad {
-    if [ -z "$@"]; then
-	cd ~/Code/Scriptures/
-    else
-	for var in "$@"
-	do
-	    grep -ri --color=auto "$var" "/Users/mike/Code/Scriptures"
-	done
-    fi
+	if [[ $@ ]]; then
+		for var in "$@"
+		do
+			grep -ri --color=auto "$var" "/Users/mike/Code/Scriptures"
+		done
+	else
+		cd ~/Code/Scriptures/
+	fi
 }
