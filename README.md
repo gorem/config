@@ -1,3 +1,3 @@
 #Config files
 
-Assorted little configuration files.
+Assorted configuration files, like .emacs for each OS.
