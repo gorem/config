@@ -1,3 +1,3 @@
 #Config files
 
-Assorted configuration files, like .emacs for each OS.
+Assorted configuration and setup files, including .emacs for each OS I use. Also includes my Ubuntu setup script.
