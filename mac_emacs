@@ -30,3 +30,4 @@
       `((".*" ,"~/Documents/.backups/" t)))
 (setq ns-right-alternate-modifier (quote none))
 (setq ns-pop-up-frames nil)
+(setq inhibit-startup-screen t)
