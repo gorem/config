@@ -20,3 +20,7 @@ function quad {
 		cd ~/Code/Scriptures/
 	fi
 }
+function jour {
+    mthyr=`date +"%B %Y"`
+    emacs -nw ~/Dropbox/write/"$mthyr".txt
+}
