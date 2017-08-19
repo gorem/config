@@ -1,12 +1,11 @@
 alias ll="ls -F -l"
 alias lh="ls -d .!(|.)"
 alias bat="pmset -g batt"
-alias batt="pmset -g batt"
-alias e="open -a Emacs"
 alias em="open -a Emacs"
 alias et="emacs -nw"
-alias en="emacs -nw"
 alias xe="xelatex"
+alias cl="clear"
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias sayg="say -v Anna"
 bind "set completion-ignore-case on"
 PS1="\u \w $ "
@@ -20,7 +19,7 @@ function quad {
 		cd ~/Code/Scriptures/
 	fi
 }
-function jour {
+function jr {
     mthyr=`date +"%B %Y"`
-    emacs -nw ~/Dropbox/write/"$mthyr".txt
+    emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(goto-char (point-max))" --eval "(newline)" --eval "(today)" --eval "(newline)" --eval "(time)" --eval "(newline)" --eval "(newline)"
 }
