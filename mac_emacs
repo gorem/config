@@ -12,8 +12,7 @@
  ;; If there is more than one, they won't work right.
  )
 (setq-default major-mode 'text-mode)
-(when (display-graphic-p)
-  (add-hook 'text-mode-hook 'visual-line-mode))
+(add-hook 'text-mode-hook 'visual-line-mode)
 (cua-mode t)
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
