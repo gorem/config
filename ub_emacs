@@ -28,4 +28,9 @@
  kept-old-versions 2)
 (setq auto-save-file-name-transforms
       `((".*" ,"~/.backups/" t)))
-(setq ns-right-alternate-modifier (quote none))
+(defun time ()
+       (interactive)
+       (insert (format-time-string "%-I:%M %p")))
+(defun today ()
+       (interactive)
+       (insert (format-time-string "%A, %B %e, %Y")))
