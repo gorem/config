@@ -30,3 +30,11 @@
 (setq ns-right-alternate-modifier (quote none))
 (setq ns-pop-up-frames nil)
 (setq inhibit-startup-screen t)
+(defun time ()
+       "Insert string for the current time formatted like '2:34 PM'."
+       (interactive)
+       (insert (format-time-string "%-I:%M %p")))
+(defun today ()
+       "Insert string for today's date nicely formatted in American style, e.g. Sunday, September 17, 2000."
+       (interactive)
+       (insert (format-time-string "%A, %B $e, %Y")))
