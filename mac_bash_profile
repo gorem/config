@@ -5,10 +5,13 @@ alias em="open -a Emacs"
 alias et="emacs -nw"
 alias xe="xelatex"
 alias cl="clear"
+alias fr="cd ~ && clear"
 alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias sayg="say -v Anna"
+alias goog="cd ~/Code/Google/"
 bind "set completion-ignore-case on"
-PS1="\u \w $ "
+export PS1="\u \W \A \$ "
+
 function quad {
 	if [[ $@ ]]; then
 		for var in "$@"
@@ -19,7 +22,32 @@ function quad {
 		cd ~/Code/Scriptures/
 	fi
 }
+
 function jr {
     mthyr=`date +"%B %Y"`
-    emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
+    if [ ! -f ~/Dropbox/write/"$mthyr".txt ]
+    then
+	emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (today) (newline) (time) (newline) (newline))"
+    else
+	emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
+    fi
 }
+
+function ns {
+    for var in "$@"
+    do
+	grep -rih "$@" ~/Documents/Notes/ | less
+    done
+}
+
+function td {
+    today=$(date +"%Y-%m-%d")
+    if [ ! -f ~/Documents/archives/todo/todo"$today".txt ]; then
+	lastfile=$(ls ~/Documents/archives/todo | sort | tail -n 1)
+	sed '/Accomplished:/q' ~/Documents/archives/todo/"$lastfile" > ~/Documents/archives/todo/todo"$today".txt
+    fi
+    open ~/Documents/archives/todo/todo"$today".txt
+}
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
