@@ -3,7 +3,6 @@ alias lh="ls -d .!(|.)"
 alias e="emacs"
 alias em="emacs"
 alias et="emacs -nw"
-alias en="emacs -nw"
 alias xe="xelatex"
 function jr {
     mthyr=`date +"%B %Y"`
