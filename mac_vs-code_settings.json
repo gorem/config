@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // font
+	"editor.fontFamily": "Source Code Pro",
+    // size
+    "editor.fontSize": 17,
+    // column as wide as the window
+    "editor.wordWrap": "on",
+    // turn off hot exit
+    "files.hotExit": "off",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "vs-minimal",
+    "window.zoomLevel": 0,
+    // no line numbers
+    //"editor.lineNumbers": false,
+    // auto-complete
+    //"editor.quickSuggestions": false
+}
