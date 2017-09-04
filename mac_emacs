@@ -37,4 +37,4 @@
 (defun today ()
        "Insert string for today's date nicely formatted in American style, e.g. Sunday, September 17, 2000."
        (interactive)
-       (insert (format-time-string "%A, %B $e, %Y")))
+       (insert (format-time-string "%A, %B %-e, %Y")))

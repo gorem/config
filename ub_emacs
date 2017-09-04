@@ -33,4 +33,4 @@
        (insert (format-time-string "%-I:%M %p")))
 (defun today ()
        (interactive)
-       (insert (format-time-string "%A, %B %e, %Y")))
+       (insert (format-time-string "%A, %B %-e, %Y")))
