@@ -11,6 +11,8 @@ alias sayg="say -v Anna"
 alias goog="cd ~/Code/Google/"
 bind "set completion-ignore-case on"
 export PS1="\u \W \A \$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 function quad {
 	if [[ $@ ]]; then
@@ -36,8 +38,19 @@ function jr {
 function ns {
     for var in "$@"
     do
-	grep -rih "$@" ~/Documents/Notes/ | less
+	grep -rih "$@" ~/Documents/archives/notes/ | less
     done
+}
+
+function kp {
+    if [[ $@ ]]; then
+        for var in "$@"
+        do
+            echo "$@" >> ~/Documents/archives/keep.txt
+        done
+    else
+        open ~/Documents/archives/keep.txt
+    fi
 }
 
 function td {
@@ -48,6 +61,3 @@ function td {
     fi
     open ~/Documents/archives/todo/todo"$today".txt
 }
-
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
