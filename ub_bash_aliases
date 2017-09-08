@@ -13,3 +13,14 @@ function jr {
 	emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
     fi
 }
+
+function kp {
+    if [[ $@ ]]; then
+       for var in "$@"
+       do
+           echo "$@" >> ~/Dropbox/write/keep.txt
+       done
+    else
+       et ~/Dropbox/write/keep.txt
+    fi
+}

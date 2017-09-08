@@ -46,10 +46,10 @@ function kp {
     if [[ $@ ]]; then
         for var in "$@"
         do
-            echo "$@" >> ~/Documents/archives/keep.txt
+            echo "$@" >> ~/Dropbox/write/keep.txt
         done
     else
-        open ~/Documents/archives/keep.txt
+        open ~/Dropbox/write/keep.txt
     fi
 }
 
