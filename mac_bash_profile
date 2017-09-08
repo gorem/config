@@ -26,12 +26,13 @@ function quad {
 }
 
 function jr {
+    yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
-    if [ ! -f ~/Dropbox/write/"$mthyr".txt ]
+    if [ ! -f ~/Dropbox/write/journal/"$yr"/"$mthyr".txt ]
     then
-	emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (today) (newline) (time) (newline) (newline))"
+	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (today) (newline) (time) (newline) (newline))"
     else
-	emacs -nw ~/Dropbox/write/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
+	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
     fi
 }
 
