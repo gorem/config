@@ -14,7 +14,7 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 ### Ubuntu
 
-**ub-setup.sh:** This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have it on a native install but would never use it inside a VM, and I use Ubuntu in both scenarios.
+**ub-setup.sh:** This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have it on a native install but would never use it inside a VM, and I use Ubuntu in both scenarios. The last line of this script is commented out, but it's the command to download the script itself. Clever, eh? (Maybe I should && a bit to make it run, too.)
 
 **ub_bash_aliases:** This is, like, my Ubuntu version of my Mac .bash_profile. Is it appropriate to put functions, and not just aliases, in ~/.bash_aliases? I look into this sometimes and get distracted by the debates, so I've stopped worrying about it.
 
