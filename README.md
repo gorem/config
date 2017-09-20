@@ -24,6 +24,6 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 **win_emacs:** Windows-friendly version of my .emacs file. I don't use Windows much for development work right now.
 
-### Other
+### Cross-platform
 
 **vs-code_settings.json:** This is my settings.json for Visual Studio Code, which I use on every platform. It's a fine GUI editor, even if you're not a coder.
