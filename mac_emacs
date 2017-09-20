@@ -1,35 +1,30 @@
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; added by Custom. Don't delete.
+(custom-set-variables)
 (custom-set-faces
- '(default ((t (:height 130 :family "Source Code Pro"))))
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:height 180 :family "Source Code Pro")))))
+;; default to text-mode with word wrap
 (setq-default major-mode 'text-mode)
 (add-hook 'text-mode-hook 'visual-line-mode)
+;; use normal keyboard shortcuts for copy and paste
 (cua-mode t)
+;; hide toolbar + icons
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
-(setq ring-bell-function 'ignore)
-(setq require-final-newline t)
 (prefer-coding-system 'utf-8)
 (setq
+ ring-bell-function 'ignore
+ require-final-newline t
+ ;; set backup and auto-save directories
  backup-by-copying t
  backup-directory-alist '(("." . "~/Documents/.backups"))
  delete-old-versions t
  kept-new-versions 6
- kept-old-versions 2)
-(setq auto-save-file-name-transforms
-      `((".*" ,"~/Documents/.backups/" t)))
-(setq ns-right-alternate-modifier (quote none))
-(setq ns-pop-up-frames nil)
-(setq inhibit-startup-screen t)
+ kept-old-versions 2
+ auto-save-file-name-transforms
+      `((".*" ,"~/Documents/.backups/" t))
+ ;; use right Option key for special characters still
+ ns-right-alternate-modifier (quote none)
+ inhibit-startup-screen t)
 (defun time ()
        "Insert string for the current time formatted like '2:34 PM'."
        (interactive)
