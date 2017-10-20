@@ -18,10 +18,10 @@ function quad {
 	if [[ $@ ]]; then
 		for var in "$@"
 		do
-			grep -ri --color=auto "$var" "/Users/mike/Code/Scriptures"
+			grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
 		done
 	else
-		cd ~/Code/Scriptures/
+		cd /Users/mike/Documents/read/church/scriptures
 	fi
 }
 
