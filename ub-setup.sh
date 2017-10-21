@@ -24,8 +24,8 @@ mkdir Code
 cd Code
 git clone https://github.com/gorem/config.git
 
-cat config/ub_bash_aliases >> ~/.bash_aliases
-cp config/ub_emacs ~/.emacs
+cat config/ub-bash-aliases >> ~/.bash_aliases
+cp config/ub-emacs ~/.emacs
 
 cd ~/Downloads
 wget https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.zip
