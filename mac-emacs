@@ -28,7 +28,7 @@
 (defun time ()
        "Insert string for the current time formatted like '2:34 PM'."
        (interactive)
-       (insert (format-time-string "%-I:%M %p")))
+       (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
 (defun today ()
        "Insert string for today's date nicely formatted in American style, e.g. Sunday, September 17, 2000."
        (interactive)
