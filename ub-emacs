@@ -30,7 +30,7 @@
       `((".*" ,"~/.backups/" t)))
 (defun time ()
        (interactive)
-       (insert (format-time-string "%-I:%M %p")))
+       (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
 (defun today ()
        (interactive)
        (insert (format-time-string "%A, %B %-e, %Y")))
