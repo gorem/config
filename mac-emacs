@@ -26,7 +26,7 @@
  ns-right-alternate-modifier (quote none)
  inhibit-startup-screen t)
 (defun time ()
-       "Insert string for the current time formatted like '2:34 PM'."
+       "Insert string for the current time formatted like '2:34 p.m.'."
        (interactive)
        (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
 (defun today ()
