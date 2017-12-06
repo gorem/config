@@ -24,3 +24,6 @@ rm -r ~/Downloads/source-code-pro-2.010R-ro-1.030R-it/
 # Linux Libertine
 # xelatex menu option
 # change prompt
+# Chrome
+
+# wget https://raw.githubusercontent.com/gorem/config/master/fedora-setup.sh
