@@ -12,13 +12,15 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 **work-phone:** This probably doesn't belong here any more, but it's an old Bash function I used at a previous job to quickly look up phone numbers I'd saved in a text file. Gotta start somewhere!
 
-### Ubuntu
+### Linux
 
 **ub-setup.sh:** This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have it on a native install but would never use it inside a VM, and I use Ubuntu in both scenarios. The last line of this script is commented out, but it's the command to download the script itself. Clever, eh? (Maybe I should && a bit to make it run, too.)
 
-**ub-bash-aliases:** This is, like, my Ubuntu version of my Mac .bash_profile. Is it appropriate to put functions, and not just aliases, in ~/.bash_aliases? I look into this sometimes and get distracted by the debates, so I've stopped worrying about it.
+**fedora-setup.sh:** This might be my *new* favoritest file, because I am really enjoying Fedora so far. Very fast and maybe in just the right part of cutting edge.
 
-**ub-emacs:** The Ubuntu version of my Mac's .emacs file. This is probably the "purest" version, in that I don't think it has any concessions to modifier keys the way the Mac one does.
+**linux-bash-aliases:** This is the Linux version of my Mac .bash_profile. Is it appropriate to put functions, and not just aliases, in ~/.bash_aliases? I look into this sometimes and get distracted by the debates, so I've stopped worrying about it.
+
+**linux-emacs:** The Linux version of my Mac's .emacs file. This is probably the "purest" version, in that I don't think it has any concessions to modifier keys the way the Mac one does.
 
 ### Windows
 
