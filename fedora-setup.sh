@@ -4,6 +4,7 @@ cd ~/Code
 git clone https://github.com/gorem/config.git
 
 cat config/linux-bash-aliases >> ~/.bash_aliases
+source ~/.bash_aliases
 cp config/linux-emacs ~/.emacs
 
 sudo dnf install emacs vim gnome-tweak-tool
