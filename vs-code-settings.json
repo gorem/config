@@ -8,6 +8,7 @@
     "editor.wordWrap": "on",
     // turn off hot exit
     "files.hotExit": "off",
+    "editor.renderLineHighlight": "none",
     "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "vs-minimal",
     "window.zoomLevel": 0,
