@@ -32,4 +32,4 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 **vimrc:** My .vimrc. All it does is turn on syntax highlighting and, in combination with the other vim file (when placed in the correct directory), allows text to wrap in .txt files. These are must haves if this vim experiment is even worth considering.
 
-**vim-ftplugin-text.vim:** This file is stored as ~/.vim/ftplugin/text.vim and allows plain text to wrap. I get that vim and emacs are great editors but this is a hilariously-insane thing to try to configure. Of course, if I'd spelled the directory "ftplugin" and not "filepath" in the first place, it wouldn't have seemed *quite* as crazy, but still.
+**vim-ftplugin-text.vim:** This file is stored as ~/.vim/ftplugin/text.vim and allows plain text to wrap. I get that vim and emacs are great editors but this is a hilariously-insane thing to try to configure. Of course, if I'd spelled the directory "ftplugin" and not "filetype" in the first place, it wouldn't have seemed *quite* as crazy, but still.
