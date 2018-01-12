@@ -28,6 +28,9 @@ git clone https://github.com/gorem/config.git
 
 cat config/linux-bash-aliases >> ~/.bash_aliases
 cp config/linux-emacs ~/.emacs
+cp config/vimrc	~/.vimrc
+mkdir -p ~/.vim/ftplugin/
+cp config/vim-ftplugin-text.vim	~/.vim/ftplugin/text.vim
 
 cd ~/Downloads
 wget https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.zip

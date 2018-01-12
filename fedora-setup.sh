@@ -6,6 +6,9 @@ git clone https://github.com/gorem/config.git
 cat config/linux-bash-aliases >> ~/.bash_aliases
 source ~/.bash_aliases
 cp config/linux-emacs ~/.emacs
+cp config/vimrc ~/.vimrc
+mkdir -p ~/.vim/ftplugin/
+cp config/vim-ftplugin-text.vim ~/.vim/ftplugin/text.vim
 
 sudo dnf install emacs vim gnome-tweak-tool
 
