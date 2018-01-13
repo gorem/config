@@ -1,7 +1,14 @@
 #!/usr/bin/python
 
-from datetime import date
+import datetime
 
-today = date.today()
+today = datetime.datetime.now()
 
-print today.strftime("%A, %B %d, %Y")
+# Could use %p in strftime below, but that uses AM/PM
+if today.hour > 12:
+    suffix = "p.m."
+else:
+    suffix = "a.m."
+
+print today.strftime("%A, %B %-d, %Y")
+print today.strftime("%-I:%M") + " " + suffix
