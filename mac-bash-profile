@@ -30,9 +30,15 @@ function jr {
     mthyr=`date +"%B %Y"`
     if [ ! -f ~/Dropbox/write/journal/"$yr"/"$mthyr".txt ]
     then
-	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (today) (newline) (time) (newline) (newline))"
+	mkdir -p ~/Dropbox/write/journal/"$yr"/
+	python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+	printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)))"
     else
-	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (newline) (today) (newline) (time) (newline) (newline))"
+	printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+	python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+	printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+	emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)))"
     fi
 }
 
