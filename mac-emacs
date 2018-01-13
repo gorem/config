@@ -25,21 +25,21 @@
  ;; use right Option key for special characters still
  ns-right-alternate-modifier (quote none)
  inhibit-startup-screen t)
-(defun time ()
-       "Insert string for the current time formatted like '2:34 p.m.'."
+(defun jtime ()
+       "Insert current time like '2:34 p.m.'."
        (interactive)
        (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
-(defun today ()
-       "Insert string for today's date nicely formatted in American style, e.g. Sunday, September 17, 2000."
+(defun jday ()
+       "Insert date like Sunday, September 17, 2000."
        (interactive)
        (insert (format-time-string "%A, %B %-e, %Y")))
-(defun journal-date ()
-       "Add date in preferred journal format"
+(defun journal-timestamp ()
+       "Add date in preferred journal format and insert newlines"
        (interactive)
        (unless (= (buffer-size) 0)
 	 (newline))
-       (today)
+       (jday)
        (newline)
-       (time)
+       (jtime)
        (newline)
        (newline))

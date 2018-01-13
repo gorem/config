@@ -28,7 +28,7 @@ function quad {
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
-    emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (journal-date))"
+    emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (journal-timestamp))"
 }
 
 function ns {
