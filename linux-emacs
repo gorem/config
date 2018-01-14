@@ -28,9 +28,21 @@
  kept-old-versions 2)
 (setq auto-save-file-name-transforms
       `((".*" ,"~/.backups/" t)))
-(defun time ()
+(defun jtime ()
+       "Insert current time like '2:34 p.m.'."
        (interactive)
        (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
-(defun today ()
+(defun jday ()
+       "Insert date like Sunday, September 17, 2000."
        (interactive)
        (insert (format-time-string "%A, %B %-e, %Y")))
+(defun journal-timestamp ()
+       "Add date in preferred journal format and insert newlines"
+       (interactive)
+       (unless (= (buffer-size) 0)
+	 (newline))
+       (jday)
+       (newline)
+       (jtime)
+       (newline)
+       (newline))
