@@ -26,9 +26,9 @@ mkdir Code
 cd Code
 git clone https://github.com/gorem/config.git
 
-cat config/linux-bash-aliases >> ~/.bash_aliases
-cp config/linux-emacs ~/.emacs
-cp config/vimrc	~/.vimrc
+cat config/linux-bash-aliases.bash >> ~/.bash_aliases
+cp config/linux-emacs.el ~/.emacs
+cp config/vimrc.vim ~/.vimrc
 mkdir -p ~/.vim/ftplugin/
 cp config/vim-ftplugin-text.vim	~/.vim/ftplugin/text.vim
 
