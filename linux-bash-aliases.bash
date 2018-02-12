@@ -7,7 +7,7 @@ alias xe="xelatex"
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
-    emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (journal-timestamp))"
+    emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (insert-journal-timestamp))"
 }
 function kp {
     if [[ $@ ]]; then
