@@ -20,5 +20,13 @@ function quad {
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
-    emacs -nw ~/Dropbox/write/journal/"$yr"/"$mthyr".txt --eval "(progn (goto-char (point-max)) (insert-journal-timestamp))"
+    if [ ! -d ~/Dropbox/write/journal/"$yr" ]; then
+	mkdir -p ~/Dropbox/write/journal/"$yr"
+    fi
+    if [ -f ~/Dropbox/write/journal/"$yr"/"$mthyr".txt ]; then
+	printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt	    
+    fi
+    python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+    printf "\n\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+    vim + +star ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
 }
