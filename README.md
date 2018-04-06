@@ -4,7 +4,7 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 ### Mac
 
-**mac-bash-profile.bash:** My .bash_profile for macOS. My favorite command is "jr", which launches my daily journal and, in combination with some emacs functions, inserts the date and time and puts my cursor in the right spot to start typing.
+**mac-bash-profile.bash:** My .bash_profile for macOS. My favorite command is "jr", which launches my daily journal, inserts the date and time, and puts my cursor in the right spot to start typing. (I've used emacs commands to do this before, but now it's a short Python script followed by opening vim.)
 
 **mac-emacs.el:** My .emacs file for macOS. I like to enable using command-key shortcuts for copy and paste, change the backup and auto-save directories to a hidden .backups folder, and just get things going my way quickly. If I recall correctly, it lets you use the right-side Option key like a normal Option key within emacs, which is great for foreign language characters (the only other language I speak is German, but you still want to be able to write "tschüß!" in your editor, right?).
 
