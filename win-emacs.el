@@ -32,3 +32,21 @@
       `(("\\(?:[^/]*/\\)*\\(.*\\)" ,"c:/Users/USERNAME/Documents/em_bu/\\1" t)))
 (setq ns-right-alternate-modifier (quote none))
 (add-to-list 'default-frame-alist '(cursor-color . "turquoise1"))
+(defun jtime ()
+       "Insert current time like '2:34 p.m.'."
+       (interactive)
+       (insert (concat (format-time-string "%-I:%M") " " (substring (format-time-string "%#p") 0 1) ".m.")))
+(defun jday ()
+       "Insert date like Sunday, September 17, 2000."
+       (interactive)
+       (insert (format-time-string "%A, %B %-e, %Y")))
+(defun journal-timestamp ()
+       "Add date in preferred journal format and insert newlines"
+       (interactive)
+       (unless (= (buffer-size) 0)
+	 (newline))
+       (jday)
+       (newline)
+       (jtime)
+       (newline)
+       (newline))
