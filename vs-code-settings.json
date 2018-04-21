@@ -12,6 +12,8 @@
     "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "vs-minimal",
     "window.zoomLevel": 0,
+    // for use on Windows
+    "files.eol": "\n"
     // no line numbers
     //"editor.lineNumbers": false,
     // auto-complete
