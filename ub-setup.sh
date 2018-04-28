@@ -21,8 +21,8 @@ done
 sudo apt install git vim emacs24 fonts-linuxlibertine exfat-fuse exfat-utils
 
 cd ~
-mkdir .backups
-mkdir Code
+mkdir -p .backups
+mkdir -p Code
 cd Code
 git clone https://github.com/gorem/config.git
 
