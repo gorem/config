@@ -13,9 +13,12 @@
     "workbench.iconTheme": "vs-minimal",
     "window.zoomLevel": 0,
     // for use on Windows
-    "files.eol": "\n"
-    // no line numbers
-    //"editor.lineNumbers": false,
-    // auto-complete
-    //"editor.quickSuggestions": false
+    "files.eol": "\n",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.closeWhenEmpty": true,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "window.restoreWindows": "none",
 }
