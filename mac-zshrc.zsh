@@ -96,14 +96,18 @@ alias lh="ls -d .!(|.)"
 alias bat="pmset -g batt"
 alias em="open -a Emacs"
 alias et="emacs -nw"
+alias e="vim"
+alias c="code"
 alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias xe="xelatex"
 alias cl="clear"
 alias fr="cd ~ && clear"
+alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
 alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 alias cfg='cd ~/Code/config'
+alias c='code'
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
@@ -116,6 +120,16 @@ function jr {
     python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     printf "\n\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     vim + +star ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+}
+function quad {
+	if [[ $@ ]]; then
+		for var in "$@"
+		do
+			grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
+		done
+	else
+		cd /Users/mike/Documents/read/church/scriptures
+	fi
 }
 prompt_context() {}
 export PATH=/usr/local/bin:$PATH
