@@ -28,7 +28,7 @@ This repo contains various configuration files I use repeatedly, including diffe
 
 ### Cross-platform
 
-**vs-code-settings.json:** This is my settings.json for Visual Studio Code, which I use on every platform. It's a fine GUI editor, even if you're not a coder.
+**VSCode-settings.json:** This is my settings.json for Visual Studio Code, which I use on every platform. It's a fine GUI editor, even if you're not a coder.
 
 **vimrc.vim:** My .vimrc. All it does is turn on syntax highlighting and, in combination with the other vim file (when placed in the correct directory), allows text to wrap in .txt files. These are must haves if this vim experiment is even worth considering.
 

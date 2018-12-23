@@ -1,0 +1,40 @@
+{
+    // font
+	"editor.fontFamily": "Source Code Pro",
+    // size
+    "editor.fontSize": 17,
+    // column as wide as the window
+    "editor.wordWrap": "on",
+    // turn off hot exit
+    "files.hotExit": "off",
+    "editor.renderLineHighlight": "none",
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vs-minimal",
+    "window.zoomLevel": 0,
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.associations": {
+        "*.m": "perl",
+        "*.mi": "perl",
+        "*.ion": "json"
+    },
+    // for use on Windows
+    //"files.eol": "\n",
+    //"python.pythonPath": "/usr/local/bin/python3",
+    "window.clickThroughInactive": false,
+    "window.closeWhenEmpty": true,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "breadcrumbs.enabled": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "window.restoreWindows": "none",
+    "editor.minimap.enabled": false,
+    "[plaintext]": {
+        "editor.fontFamily": "Source Code Pro",
+        "editor.fontSize": 16,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": false,
+    }
+}
