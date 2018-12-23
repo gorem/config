@@ -5,6 +5,8 @@
 ;; default to text-mode with word wrap
 (setq-default major-mode 'text-mode)
 (add-hook 'text-mode-hook 'visual-line-mode)
+;; use spaces instead of tabs
+(setq-default major-mode 'text-mode)
 ;; use normal keyboard shortcuts for copy and paste
 (cua-mode t)
 ;; hide toolbar + icons
@@ -43,3 +45,6 @@
        (jtime)
        (newline)
        (newline))
+;; make .m and .mi files open in Perl mode
+(add-to-list 'auto-mode-alist '("\\.m\\'" . perl-mode))
+(add-to-list 'auto-mode-alist '("\\.mi\\'" . perl-mode))
