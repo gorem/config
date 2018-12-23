@@ -107,7 +107,6 @@ alias sayg="say -v Anna"
 alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 alias cfg='cd ~/Code/config'
-alias c='code'
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
