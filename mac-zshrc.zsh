@@ -130,5 +130,23 @@ function quad {
 		cd /Users/mike/Documents/read/church/scriptures
 	fi
 }
+function td {
+    today=$(date +"%Y-%m-%d")
+    if [ ! -f ~/Documents/todo/todo"$today".txt ]; then
+	lastfile=$(ls ~/Documents/todo | sort | tail -n 1)
+	sed '/Accomplished:/q' ~/Documents/todo/"$lastfile" > ~/Documents/todo/todo"$today".txt
+    fi
+    e ~/Documents/todo/todo"$today".txt
+}
+function sarah {
+    if [[ $@ ]]; then
+	for var in "$@"
+	do
+	    echo "$@" >> ~/Documents/sarah.txt
+	done
+    else
+	e ~/Documents/sarah.txt
+    fi
+}
 prompt_context() {}
 export PATH=/usr/local/bin:$PATH
