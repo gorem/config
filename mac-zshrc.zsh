@@ -131,4 +131,4 @@ function quad {
 	fi
 }
 prompt_context() {}
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
