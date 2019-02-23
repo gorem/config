@@ -98,6 +98,7 @@ alias em="open -a Emacs"
 alias et="emacs -nw"
 alias e="vim"
 alias c="code"
+alias p="python3"
 alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias xe="xelatex"
 alias cl="clear"

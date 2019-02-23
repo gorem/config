@@ -1,6 +1,7 @@
 alias ll="ls -F -l"
 alias lh="ls -d .!(|.)"
 alias e="emacs"
+alias p="python3"
 alias em="emacs"
 alias et="emacs -nw"
 alias xe="xelatex"
