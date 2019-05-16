@@ -118,7 +118,7 @@ function jr {
     if [ -f ~/Dropbox/write/journal/"$yr"/"$mthyr".txt ]; then
 	    printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     fi
-    python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+    python3 ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     printf "\n\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     vim + +star ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
 }

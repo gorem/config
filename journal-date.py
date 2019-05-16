@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
 
 import datetime
 
@@ -10,5 +10,5 @@ if today.hour >= 12:
 else:
     suffix = "a.m."
 
-print today.strftime("%A, %B %-d, %Y")
-print today.strftime("%-I:%M") + " " + suffix
+print(today.strftime("%A, %B %-d, %Y"))
+print(today.strftime("%-I:%M") + " " + suffix)
