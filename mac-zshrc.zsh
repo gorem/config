@@ -122,6 +122,10 @@ function jr {
     printf "\n\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
     vim + +star ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
 }
+function jd {
+    yr=`date +"%Y"`
+    open ~/Dropbox/write/journal/"$yr"
+}
 function quad {
 	if [[ $@ ]]; then
 		for var in "$@"
