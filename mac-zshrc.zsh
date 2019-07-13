@@ -108,7 +108,7 @@ alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
 alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
-alias cfg='cd ~/Code/config'
+# journal
 function jr {
     yr=`date +"%Y"`
     mthyr=`date +"%B %Y"`
@@ -135,6 +135,13 @@ function quad {
 	else
 		cd /Users/mike/Documents/read/church/scriptures
 	fi
+}
+# ep: convert to epub
+function ep {
+  for var in "$@"
+  do
+    ebook-convert "$@" .EPUB --minimum-line-height=145
+  done
 }
 prompt_context() {}
 export PATH=$HOME/.gem/ruby/2.6.0/bin:/usr/local/opt/ruby/bin:/usr/local/bin:$PATH:/Library/TeX/texbin
