@@ -11,4 +11,4 @@ else:
     suffix = "a.m."
 
 print(today.strftime("%A, %B %-d, %Y"))
-print(today.strftime("%-I:%M") + " " + suffix)
+print(today.strftime("%-I:%M") + " " + suffix + "\n")

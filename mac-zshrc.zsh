@@ -94,13 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lh="ls -d .!(|.)"
 alias bat="pmset -g batt"
-alias em="open -a Emacs"
 alias et="emacs -nw"
 alias e="vim"
 alias v="vim"
 alias c="code"
 alias p="python3"
-alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias xe="xelatex"
 alias cl="clear"
 alias fr="cd ~ && clear"
@@ -110,17 +108,8 @@ alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 # journal
 function jr {
-    yr=`date +"%Y"`
-    mthyr=`date +"%B %Y"`
-    if [ ! -d ~/Dropbox/write/journal/"$yr" ]; then
-	    mkdir -p ~/Dropbox/write/journal/"$yr"
-    fi
-    if [ -f ~/Dropbox/write/journal/"$yr"/"$mthyr".txt ]; then
-	    printf "\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
-    fi
-    python ~/Code/config/journal-date.py >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
-    printf "\n\n" >> ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
-    vim + +star ~/Dropbox/write/journal/"$yr"/"$mthyr".txt
+    python ~/Code/config/journal-date.py | pbcopy
+    open -a "iA Writer Classic"
 }
 function jd {
     yr=`date +"%Y"`
