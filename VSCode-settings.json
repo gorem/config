@@ -1,14 +1,14 @@
 {
     // font
-	"editor.fontFamily": "Source Code Pro",
+	"editor.fontFamily": "PT Mono",
     // size
-    "editor.fontSize": 17,
+    "editor.fontSize": 18,
     // column as wide as the window
     "editor.wordWrap": "on",
     // turn off hot exit
     "files.hotExit": "off",
     "editor.renderLineHighlight": "none",
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "vs-minimal",
     "window.zoomLevel": 0,
     "editor.acceptSuggestionOnEnter": "off",
@@ -32,9 +32,16 @@
     "window.restoreWindows": "none",
     "editor.minimap.enabled": false,
     "[plaintext]": {
-        "editor.fontFamily": "Source Code Pro",
-        "editor.fontSize": 16,
+        "editor.fontFamily": "PT Mono",
+        "editor.fontSize": 18,
         "editor.lineNumbers": "off",
         "editor.quickSuggestions": false,
-    }
+    },
+    "[latex]": {
+        "editor.fontFamily": "PT Mono",
+        "editor.fontSize": 18,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": false,
+    },
+    "python.pythonPath": "/usr/local/bin/python3"
 }
