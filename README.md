@@ -5,8 +5,6 @@ This repo contains various configuration files I use repeatedly, including diffe
 ### Mac
 * **mac-zshrc.zsh**: My ~/.zshrc for macOS. Built on oh-my-zsh.
 
-* **timer.sh**: A janky bash script/countdown timer I used in grad school in lieu of inexpensive Pomodoro timers on the Mac App Store. Hey, at least it launches a native Mac notification once time is up. I've been meaning to update it with tons of phrases, and haven't.
-
 ### Linux
 * **ub-setup.sh**: This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have Spotify on a native install but would never use it inside a VM, and I use Ubuntu in both contexts. The last line of this script is commented out, but it's the command to download the script itself, so I just run it on a new machine, then run the script. Clever, eh? (Maybe I should && something on there to make it run, too.)
 
@@ -30,3 +28,5 @@ This repo contains various configuration files I use repeatedly, including diffe
 * **work-phone.bash**: This probably doesn't belong here any more, but it's an old Bash function I used at a previous job to quickly look up phone numbers I'd saved in a text file. Gotta start somewhere!
 
 * **mac-bash-profile.bash**: My .bash_profile for macOS. My favorite command is "jr", which launches my daily journal, inserts the date and time, and puts my cursor in the right spot to start typing. (I've used emacs commands to do this before, but now it's a short Python script followed by opening vim.)
+
+* **timer.sh**: A janky bash script/countdown timer I used in grad school in lieu of inexpensive Pomodoro timers on the Mac App Store. Hey, at least it launches a native Mac notification once time is up. I've been meaning to update it with tons of phrases, and haven't.
