@@ -116,21 +116,21 @@ function jd {
     open ~/Dropbox/write/journal/"$yr"
 }
 function quad {
-	if [[ $@ ]]; then
-		for var in "$@"
-		do
-			grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
-		done
-	else
-		cd /Users/mike/Documents/read/church/scriptures
-	fi
+	  if [[ $@ ]]; then
+		    for var in "$@"
+		    do
+			      grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
+		    done
+	  else
+		    cd /Users/mike/Documents/read/church/scriptures
+	  fi
 }
 # ep: convert to epub
 function ep {
-  for var in "$@"
-  do
-    ebook-convert "$@" .EPUB --minimum-line-height=145
-  done
+    for var in "$@"
+    do
+        ebook-convert "$@" .EPUB --minimum-line-height=145
+    done
 }
 prompt_context() {}
 export PATH=$HOME/.gem/ruby/2.6.0/bin:/usr/local/opt/ruby/bin:/usr/local/bin:$PATH:/Library/TeX/texbin
