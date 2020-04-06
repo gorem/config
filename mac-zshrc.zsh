@@ -108,8 +108,9 @@ alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 # journal
 function jr {
-    python ~/Code/config/mac-journal.py | pbcopy
-    open -a "iA Writer Classic"
+    mthyr=`date +"%B %Y"`
+    python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
+    vim + +star ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
 }
 function jd {
     yr=`date +"%Y"`

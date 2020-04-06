@@ -20,8 +20,8 @@ if country == "United States":
     country = "U.S.A."
 
 if today.day != 1:
-    print("\n")
+    print("")
 print(today.strftime("%A, %B %-d, %Y"))
 print(today.strftime("%-I:%M ") + suffix)
 print(city + ", " + state + ", " + country)
-print("")
+print("\n")
