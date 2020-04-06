@@ -108,7 +108,7 @@ alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 # journal
 function jr {
-    python ~/Code/config/journal-date.py | pbcopy
+    python ~/Code/config/mac-journal.py | pbcopy
     open -a "iA Writer Classic"
 }
 function jd {

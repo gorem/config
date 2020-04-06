@@ -5,11 +5,13 @@ This repo contains various configuration files I use repeatedly, including diffe
 ### Mac
 * **mac-zshrc.zsh**: My ~/.zshrc for macOS. Built on oh-my-zsh.
 
+* **mac-journal.py**: A Python script I use to write in my journal on my Mac. Copies the date, time, and location in my preferred format and opens iA Writer to get me started.
+
 ### Linux
 * **ub-setup.sh**: This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have Spotify on a native install but would never use it inside a VM, and I use Ubuntu in both contexts. The last line of this script is commented out, but it's the command to download the script itself, so I just run it on a new machine, then run the script. Clever, eh? (Maybe I should && something on there to make it run, too.)
 
 ### iOS
-* **journal.py**: A Pythonista script I use to open my journal on iOS. I'm now using iA Writer and iCloud for syncing.
+* **ios-journal.py**: A Pythonista script I use to open my journal on iOS. I'm now using iA Writer and iCloud for syncing.
 
 ### Cross-platform editors
 * **emacs.el**: My .emacs file for Macs and Linux. I like to enable using command-key shortcuts for copy and paste, change the backup and auto-save directories to a hidden .backups folder, and just get things going my way quickly. If I recall correctly, it lets you use the right-side Option key like a normal Option key within emacs, which is great for foreign language characters (the only other language I speak is German, but you still want to be able to write "tschüß!" in your editor, right?).
