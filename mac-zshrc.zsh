@@ -113,8 +113,7 @@ function jr {
     vim + +star ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
 }
 function jd {
-    yr=`date +"%Y"`
-    open ~/Dropbox/write/journal/"$yr"
+    open ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/
 }
 function quad {
 	  if [[ $@ ]]; then
