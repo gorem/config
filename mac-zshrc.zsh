@@ -93,28 +93,37 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lh="ls -d .!(|.)"
-alias bat="pmset -g batt"
-alias et="emacs -nw"
-alias e="vim"
+alias bat="pmset -g batt"   # battery
+alias et="emacs -nw"        # Emacs terminal, which I don't even use
+alias e="code"
 alias v="vim"
-alias c="code"
+alias c="code"              # Visual Studio Code
 alias p="python3"
 alias xe="xelatex"
 alias cl="clear"
-alias fr="cd ~ && clear"
+alias fr="cd ~ && clear"    # "fresh"
 alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
+
+# Common directories
 alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
+alias ws='cd ~/Code/past-subject'
+alias util='cd ~/Code/utilities'
+
+export EDITOR='/usr/local/bin/code'
+
 # journal
 function jr {
     mthyr=`date +"%B %Y"`
     python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
     vim + +star ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
 }
+# journal directory
 function jd {
     open ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/
 }
+
 function quad {
 	  if [[ $@ ]]; then
 		    for var in "$@"
