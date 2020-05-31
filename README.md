@@ -5,7 +5,7 @@ This repo contains various configuration files I use repeatedly, including diffe
 ### Mac
 * **mac-zshrc.zsh**: My ~/.zshrc for macOS. Built on oh-my-zsh.
 
-* **mac-journal.py**: A Python script I use to write in my journal on my Mac. Copies the date, time, and location in my preferred format and opens vim with my cursor at the end of the file to get me started.
+* **mac-journal.py**: A Python script I use to write in my journal on my Mac. Copies the date, time, and location in my preferred format and opens Visual Studio Code with my cursor at the end of the file to get me started.
 
 ### Linux
 * **ub-setup.sh**: This is probably my favorite file on here. It's a script to get an Ubuntu machine up and running with the programs and files I like to use, including configuring emacs with Source Code Pro as the default font. At runtime, it asks if you want Spotify installed, because I like to have Spotify on a native install but would never use it inside a VM, and I use Ubuntu in both contexts. The last line of this script is commented out, but it's the command to download the script itself, so I just run it on a new machine, then run the script. Clever, eh? (Maybe I should && something on there to make it run, too.)
