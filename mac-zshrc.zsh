@@ -104,6 +104,7 @@ alias cl="clear"
 alias fr="cd ~ && clear"    # "fresh"
 alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
+alias ml="p ~/Code/utilities/letter/convert_letter.py"
 
 # Common directories
 alias eul='cd ~/Code/euler'
