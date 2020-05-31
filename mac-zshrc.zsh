@@ -117,8 +117,9 @@ export EDITOR='/usr/local/bin/code'
 # journal
 function jr {
     mthyr=`date +"%B %Y"`
-    python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
-    vim + +star ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
+    python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
+    # open VS Code at the "end" of the file
+    code -g ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt:500
 }
 # journal directory
 function jd {

@@ -23,5 +23,5 @@ if today.day != 1:
     print("")
 print(today.strftime("%A, %B %-d, %Y"))
 print(today.strftime("%-I:%M ") + suffix)
-print(city + ", " + state + ", " + country)
+print(city + ", " + state + ", " + country, end='')
 print("\n")
