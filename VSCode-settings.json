@@ -1,14 +1,14 @@
 {
     // font
-	"editor.fontFamily": "PT Mono",
+	"editor.fontFamily": "Source Code Pro",
     // size
-    "editor.fontSize": 18,
+    "editor.fontSize": 20,
     // column as wide as the window
     "editor.wordWrap": "on",
     // turn off hot exit
     "files.hotExit": "off",
     "editor.renderLineHighlight": "none",
-    "workbench.colorTheme": "Material Theme",
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
     "workbench.iconTheme": "vs-minimal",
     "window.zoomLevel": 0,
     "editor.acceptSuggestionOnEnter": "off",
@@ -22,9 +22,7 @@
     //"python.pythonPath": "/usr/local/bin/python3",
     "window.clickThroughInactive": false,
     "window.closeWhenEmpty": true,
-    "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
-    "window.openWithoutArgumentsInNewWindow": "on",
     "breadcrumbs.enabled": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -32,16 +30,20 @@
     "window.restoreWindows": "none",
     "editor.minimap.enabled": false,
     "[plaintext]": {
-        "editor.fontFamily": "PT Mono",
+        "editor.fontFamily": "Source Code Pro",
         "editor.fontSize": 18,
         "editor.lineNumbers": "off",
         "editor.quickSuggestions": false,
     },
     "[latex]": {
-        "editor.fontFamily": "PT Mono",
+        "editor.fontFamily": "Source Code Pro",
         "editor.fontSize": 18,
         "editor.lineNumbers": "off",
         "editor.quickSuggestions": false,
     },
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "editor.folding": false,
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Github",
+    "workbench.preferredHighContrastColorTheme": "Material Theme Palenight High Contrast"
 }
