@@ -127,14 +127,14 @@ function jd {
 }
 
 function quad {
-	  if [[ $@ ]]; then
-		    for var in "$@"
-		    do
-			      grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
-		    done
-	  else
-		    cd /Users/mike/Documents/read/church/scriptures
-	  fi
+	if [[ $@ ]]; then
+		for var in "$@"
+		do
+			grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
+		done
+	else
+		cd /Users/mike/Documents/read/church/scriptures
+	fi
 }
 # ep: convert to epub
 function ep {
