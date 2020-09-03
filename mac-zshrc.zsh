@@ -98,6 +98,7 @@ alias et="emacs -nw"        # Emacs terminal, which I don't even use
 alias e="code"
 alias v="vim"
 alias c="code"              # Visual Studio Code
+alias m="/usr/local/bin/mate"
 alias p="python3"
 alias xe="xelatex"
 alias cl="clear"
@@ -112,14 +113,14 @@ alias conf='cd ~/Code/config'
 alias ws='cd ~/Code/past-subject'
 alias util='cd ~/Code/utilities'
 
-export EDITOR='/usr/local/bin/code'
+export EDITOR='/usr/local/bin/mate'
 
 # journal
 function jr {
     mthyr=`date +"%B %Y"`
     python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
-    # open VS Code at the "end" of the file
-    code -g ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt:500
+    # open TextMate at the "end" of the file
+    mate -l 500 ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
 }
 # journal directory
 function jd {
