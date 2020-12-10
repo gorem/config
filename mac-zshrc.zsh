@@ -118,9 +118,10 @@ export EDITOR='/usr/local/bin/mate'
 # journal
 function jr {
     mthyr=`date +"%B %Y"`
+    # Add date to file
     python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
-    # open TextMate at the "end" of the file
-    mate -l 500 ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/"$mthyr".txt
+    # Open iA Writer
+    open -a iA\ Writer ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
 }
 # journal directory
 function jd {
