@@ -117,11 +117,12 @@ export EDITOR='/usr/local/bin/mate'
 
 # journal
 function jr {
-    mthyr=`date +"%B %Y"`
+    # month-year in form "April 2021"
+    monthyear=`date +"%B %Y"`
     # Add date to file
-    python3 ~/Code/config/mac-journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
+    python3 ~/Code/config/mac/journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
     # Open iA Writer
-    open -a iA\ Writer ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$mthyr.txt
+    open -a iA\ Writer ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
 }
 # journal directory
 function jd {
