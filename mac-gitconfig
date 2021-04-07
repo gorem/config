@@ -1,0 +1,15 @@
+[user]
+	name = Mike Gore
+	email = gore@colorado.edu
+[core]
+	editor = mate -w
+	excludesfile = /Users/mike/.gitignore
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = mainline
