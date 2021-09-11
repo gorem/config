@@ -133,10 +133,10 @@ function quad {
 	if [[ $@ ]]; then
 		for var in "$@"
 		do
-			grep -ri --color=auto "$var" "/Users/mike/Documents/read/church/scriptures"
+			grep -ri --color=auto "$var" "/Users/mike/Documents/archives/church/study/Scriptures" --exclude-dir=PDFs
 		done
 	else
-		cd /Users/mike/Documents/read/church/scriptures
+		cd /Users/mike/Documents/archives/church/study/Scriptures
 	fi
 }
 # ep: convert to epub
