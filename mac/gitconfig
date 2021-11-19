@@ -2,7 +2,7 @@
 	name = Mike Gore
 	email = gore@colorado.edu
 [core]
-	editor = mate -w
+	editor = vim
 	excludesfile = /Users/mike/.gitignore
 [credential]
 	helper = osxkeychain
