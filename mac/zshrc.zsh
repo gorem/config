@@ -143,7 +143,7 @@ function quad {
 function ep {
     for var in "$@"
     do
-        ebook-convert "$@" .EPUB --minimum-line-height=145
+        /Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
     done
 }
 prompt_context() {}
