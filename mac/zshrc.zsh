@@ -146,5 +146,18 @@ function ep {
         /Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
     done
 }
+# ec: ebook copy / ebook convert
+function ec {
+    for var in "$@"
+    do
+        /Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
+    done
+    # Local folder
+    cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
+    # Apple Books
+    cp *.EPUB /Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents
+    # Server
+    cp *.EPUB /Volumes/Mike/Ebooks
+}
 prompt_context() {}
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
