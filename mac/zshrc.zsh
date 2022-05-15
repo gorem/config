@@ -118,16 +118,16 @@ export EDITOR='/usr/local/bin/mate'
 
 # journal
 function jr {
-    # month-year in form "April 2021"
-    monthyear=`date +"%B %Y"`
-    # Add date to file
-    python3 ~/Code/config/mac/journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
-    # Open iA Writer
-    open -a iA\ Writer ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
+	# month-year in form "April 2021"
+	monthyear=`date +"%B %Y"`
+	# Add date to file
+	python3 ~/Code/config/mac/journal.py >> ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
+	# Open iA Writer
+	open -a iA\ Writer ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/$monthyear.txt
 }
 # journal directory
 function jd {
-    open ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/
+	open ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/
 }
 
 function quad {
@@ -142,23 +142,23 @@ function quad {
 }
 # ep: convert to epub
 function ep {
-    for var in "$@"
-    do
-        /Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
-    done
+	for var in "$@"
+	do
+		/Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
+	done
 }
 # ec: ebook copy / ebook convert
 function ec {
-    for var in "$@"
-    do
-        /Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
-    done
-    # Local folder
-    cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
-    # Apple Books
-    cp *.EPUB /Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents
-    # Server
-    cp *.EPUB /Volumes/Mike/Ebooks
+	for var in "$@"
+	do
+		/Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
+	done
+	# Local folder
+	cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
+	# Apple Books
+	cp *.EPUB /Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents
+	# Server
+	cp *.EPUB /Volumes/Mike/Ebooks
 }
 prompt_context() {}
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
