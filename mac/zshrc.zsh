@@ -156,7 +156,7 @@ function ec {
 	# Local folder
 	cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
 	# Apple Books
-	cp *.EPUB /Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents
+	cp *.EPUB "/Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
 	# Server
 	cp *.EPUB /Volumes/Mike/Ebooks
 }
