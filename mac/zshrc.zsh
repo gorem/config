@@ -147,18 +147,40 @@ function ep {
 		/Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
 	done
 }
-# ec: ebook copy / ebook convert
+# ecw: ebook copy / ebook convert to Windows
+function ecw {
+	for var in "$@"
+	do
+		/Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
+	done
+	# Local folder
+	echo "Copying to local folder"
+	cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
+	# Apple Books
+	echo "Copying to Apple Books"
+	cp *.EPUB "/Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
+	# Server
+	echo "Copying to server on Windows"
+	cp *.EPUB /Volumes/Mike/Ebooks
+}
+# ec: ebook copy / ebook convert to Ubuntu server
 function ec {
 	for var in "$@"
 	do
 		/Applications/calibre.app/Contents/MacOS/ebook-convert "$@" .EPUB --minimum-line-height=145
 	done
 	# Local folder
+	echo "Copying to local folder"
 	cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
 	# Apple Books
+	echo "Copying to Apple Books"
 	cp *.EPUB "/Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
-	# Server
-	cp *.EPUB /Volumes/Mike/Ebooks
+	# Server - Ubuntu
+	echo "Copying to Ubuntu server"
+	cp *.EPUB /Volumes/mike-home/Public/Ebooks
+	# Server - Windows drive
+	echo "Copying to Windows drive"
+	cp *.EPUB /Volumes/Data/Mike/Ebooks
 }
 prompt_context() {}
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
