@@ -180,7 +180,7 @@ function ec {
 	cp *.EPUB /Volumes/mike-home/Public/Ebooks
 	# Server - Windows drive
 	echo "Copying to Windows drive"
-	cp *.EPUB /Volumes/Data/Mike/Ebooks
+	cp *.EPUB /Volumes/mike-home/WindowsData/Mike/Ebooks
 }
 prompt_context() {}
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
