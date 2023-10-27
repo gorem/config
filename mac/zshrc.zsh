@@ -106,7 +106,7 @@ alias fr="cd ~ && clear"    # "fresh"
 alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
 alias ml="p ~/Code/utilities/letter/convert_letter.py"
-alias pc="ssh mike@192.168.4.57 -p 2222"
+alias pc="ssh mike@gargantubuntu.local"
 
 # Common directories
 alias eul='cd ~/Code/euler'
