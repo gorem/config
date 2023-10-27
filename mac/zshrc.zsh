@@ -116,6 +116,9 @@ alias util='cd ~/Code/utilities'
 
 export EDITOR='/usr/local/bin/mate'
 
+# "back up pictures"
+alias bup='rsync -av /Users/mike/Pictures/iPhone\ 15\ Pro\ Max/ /Volumes/mike-home/Pictures/iOS\ Pictures/iPhone\ 15\ Pro\ Max'
+
 # journal
 function jr {
 	# month-year in form "April 2021"
