@@ -119,7 +119,7 @@ export EDITOR='/usr/local/bin/mate'
 # "back up pictures"
 alias bup='rsync -av /Users/mike/Pictures/iPhone\ 15\ Pro\ Max/ /Volumes/mike-home/Pictures/iOS\ Pictures/iPhone\ 15\ Pro\ Max'
 # "back up journal"
-alias buj="rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Users/mike/Documents/Archives/Resources/journal"
+alias buj="rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Users/mike/Documents/4-archives/43-resources/journal; rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Volumes/mike-home/Documents/4-Archives/43-Resources/journal"
 
 # journal
 function jr {
