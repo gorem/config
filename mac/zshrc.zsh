@@ -176,7 +176,7 @@ function ec {
 	done
 	# Local folder
 	echo "Copying to local folder"
-	cp *.EPUB /Users/mike/Documents/archives/ebooks/kindle/epub
+	cp *.EPUB /Users/mike/Documents/4-archives/43-resources/ebooks/epub
 	# Apple Books
 	echo "Copying to Apple Books"
 	cp *.EPUB "/Users/mike/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
