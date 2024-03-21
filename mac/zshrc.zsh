@@ -113,6 +113,7 @@ alias eul='cd ~/Code/euler'
 alias conf='cd ~/Code/config'
 alias ws='cd ~/Code/past-subject'
 alias util='cd ~/Code/utilities'
+alias aoc='cd ~/Code/advent-of-code-2023'
 
 export EDITOR='/usr/local/bin/mate'
 
@@ -120,6 +121,8 @@ export EDITOR='/usr/local/bin/mate'
 alias bup='rsync -av /Users/mike/Pictures/iPhone\ 15\ Pro\ Max/ /Volumes/mike-home/Pictures/iOS\ Pictures/iPhone\ 15\ Pro\ Max'
 # "back up journal"
 alias buj="rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Users/mike/Documents/4-archives/43-resources/journal; rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Volumes/mike-home/Documents/4-Archives/43-Resources/journal"
+# "back up taxes"
+alias but="rsync -av ~/Documents/1-projects/2023\ Taxes/ /Volumes/mike-home/Documents/1-Projects/2023\ Taxes"
 
 # journal
 function jr {
@@ -139,10 +142,10 @@ function quad {
 	if [[ $@ ]]; then
 		for var in "$@"
 		do
-			grep -ri --color=auto "$var" "/Users/mike/Documents/archives/church/study/Scriptures" --exclude-dir=PDFs
+			grep -ri --color=auto "$var" "/Users/mike/Documents/4-archives/43-resources/church/study/Scriptures/text" --exclude-dir=PDFs
 		done
 	else
-		cd /Users/mike/Documents/archives/church/study/Scriptures
+		cd /Users/mike/Documents/4-archives/43-resources/church/study/Scriptures/text
 	fi
 }
 # ep: convert to epub
