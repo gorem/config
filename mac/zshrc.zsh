@@ -97,7 +97,7 @@ alias bat="pmset -g batt"   # battery
 alias et="emacs -nw"        # Emacs terminal, which I don't even use
 alias e="code"
 alias v="vim"
-alias c="code"              # Visual Studio Code
+alias c='code -n --profile "Coding"'      # Visual Studio Code
 alias m="/usr/local/bin/mate"
 alias p="python3"
 alias xe="xelatex"
@@ -106,7 +106,7 @@ alias fr="cd ~ && clear"    # "fresh"
 alias sz="source ~/.zshrc"
 alias sayg="say -v Anna"
 alias ml="p ~/Code/utilities/letter/convert_letter.py"
-alias pc="ssh mike@gargantubuntu.local"
+alias pc="ssh mike@gargantua2.local"
 
 # Common directories
 alias eul='cd ~/Code/euler'
@@ -120,7 +120,7 @@ export EDITOR='/usr/local/bin/mate'
 # "back up pictures"
 alias bup='rsync -av /Users/mike/Pictures/iPhone\ 15\ Pro\ Max/ /Volumes/mike-home/Pictures/iOS\ Pictures/iPhone\ 15\ Pro\ Max'
 # "back up journal"
-alias buj="rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Users/mike/Documents/4-archives/43-resources/journal; rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Volumes/mike-home/Documents/4-Archives/43-Resources/journal"
+alias buj="rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Users/mike/Documents/4-archives/43-resources/journal; rsync -av ~/Library/Mobile\ Documents/27N4MQEA55\~pro\~writer/Documents/journal/ /Volumes/mike/Documents/4-Archives/43-Resources/journal"
 # "back up taxes"
 alias but="rsync -av ~/Documents/1-projects/2023\ Taxes/ /Volumes/mike-home/Documents/1-Projects/2023\ Taxes"
 
@@ -190,5 +190,12 @@ function ec {
 	echo "Copying to Windows drive"
 	cp *.EPUB /Volumes/mike-home/WindowsData/Mike/Ebooks
 }
+# fw: freewrite
+function fw {
+	p /Users/mike/Code/utilities/freewrite.py
+}
+# rf: reflect
+function rf {
+	p /Users/mike/Code/utilities/reflect.py
+}
 prompt_context() {}
-export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
