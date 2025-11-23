@@ -8,10 +8,6 @@
     // turn off hot exit
     "files.hotExit": "off",
     "editor.renderLineHighlight": "none",
-    "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "vs-minimal",
-    "window.zoomLevel": 0,
-    "editor.acceptSuggestionOnEnter": "off",
     "files.associations": {
         "*.m": "perl",
         "*.mi": "perl",
@@ -23,27 +19,56 @@
     "window.clickThroughInactive": false,
     "window.closeWhenEmpty": true,
     "window.openFoldersInNewWindow": "on",
-    "breadcrumbs.enabled": true,
+    "breadcrumbs.enabled": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
     "window.restoreWindows": "none",
     "editor.minimap.enabled": false,
-    "[plaintext]": {
-        "editor.fontFamily": "Source Code Pro",
-        "editor.fontSize": 18,
+    "[plaintext][markdown]": {
+        "editor.fontFamily": "Monaspace Radon NF",
+        "editor.fontSize": 20,
         "editor.lineNumbers": "off",
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+    },
+    "[git-commit]": {
+        "editor.fontFamily": "Source Code Pro",
+        "editor.fontSize": 20,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
     },
     "[latex]": {
         "editor.fontFamily": "Source Code Pro",
         "editor.fontSize": 18,
         "editor.lineNumbers": "off",
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
     },
+    "markdown.preview.fontSize": 18,
+    "editor.copyWithSyntaxHighlighting": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "editor.folding": false,
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.preferredLightColorTheme": "Github",
-    "workbench.preferredHighContrastColorTheme": "Material Theme Palenight High Contrast"
+    "workbench.preferredHighContrastColorTheme": "Material Theme Palenight High Contrast",
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "workbench.colorTheme": "Solarized Light",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontSize": "18",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "none",
+    "window.autoDetectColorScheme": true,
+    "chat.commandCenter.enabled": false,
+    "workbench.statusBar.visible": true
 }
